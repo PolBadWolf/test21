@@ -10,6 +10,7 @@
     <version>1.0</version>
     <modules>
         <module>loader</module>
+        <module>modeles</module>
     </modules>
 
     <properties>
