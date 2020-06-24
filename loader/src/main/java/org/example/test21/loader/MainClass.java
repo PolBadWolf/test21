@@ -18,24 +18,26 @@ public class MainClass {
         TestClass1 testClass1 = new TestClass1(this::myFunction3);
         TestClass2 testClass2 = new TestClass2(this::myFunction4);
         testClass1.callBackObj("s1");
-        testClass1.callBackObj("s2");
         testClass1.callBackObj("s3");
         testClass2.callBack();
     }
 
     private void myFuncton1(String s1) {
-        System.out.println("Fn1");
-        System.out.println(s1);
+        System.out.print("Fn1:");
+        System.out.print(s1);
+        System.out.println();
     }
 
     private void  myFunction2(int a, int b) {
-        System.out.println("Fn2");
-        System.out.println("a + b = : " + a + " + " + b + " = " + (a+b));
+        System.out.print("Fn2:");
+        System.out.print("a + b = : " + a + " + " + b + " = " + (a+b));
+        System.out.println();
     }
 
     private void myFunction3(Object o) {
-        System.out.println("Fn3");
-        System.out.println((String)o);
+        System.out.print("Fn3:");
+        System.out.print((String)o);
+        System.out.println();
     }
     private void myFunction4() {
         System.out.println("Fn4 - no param");
